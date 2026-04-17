@@ -25,5 +25,9 @@
 
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-    **Satır satır kodu inceleyelim**
-#asdfg
+## Satır satır kodu inceleyelim
+
+```python
+from flask import Flask, request, jsonify
+from flask_sqlalchemy import SQLAlchemy
+```
