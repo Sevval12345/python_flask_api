@@ -32,6 +32,9 @@ from flask_sqlalchemy import SQLAlchemy
 ```
 
 ```bash Flask ``` → Sunucuyu kuran ana araç
-request → "Bana şu kullanıcıyı ekle" gibi gelen istekleri okur
-jsonify → Cevabı JSON formatına çevirir (tarayıcının anlayacağı dil)
-SQLAlchemy → Veritabanıyla konuşmamızı sağlar
+
+```bash request ``` → "Şu kullanıcıyı ekle" gibi gelen istekleri okur
+
+```bash jsonify ``` → Cevabı JSON formatına çevirir (bu tarayıcının anlayacağı dildir)
+
+```bash SQLAlchemy ``` → Veritabanıyla konuşmamızı sağlar
