@@ -38,3 +38,15 @@ from flask_sqlalchemy import SQLAlchemy
 ```bash jsonify ``` → Cevabı JSON formatına çevirir (bu tarayıcının anlayacağı dildir)
 
 ```bash SQLAlchemy ``` → Veritabanıyla konuşmamızı sağlar
+
+```python
+app = Flask(__name__)
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///users.db"
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+```
+
+```bash  app = Flask(__name__) ``` → "Bir Flask uygulaması başlat" demek. ```bash app ``` artık bizim sunucumuzun adı.
+
+```bash SQLALCHEMY_DATABASE_URI ``` → Veritabanının nerede olduğunu söylüyoruz. ```bash sqlite:///users.db ``` → "Aynı klasörde ```bash users.db ``` adında bir dosya kullan" demek.
+
+```bash TRACK_MODIFICATIONS ``` = False → Gereksiz uyarıları kapat. Performans için.
