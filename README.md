@@ -1,3 +1,5 @@
+**Bu repoda yapılanlar yeni çıkan **GitHub Copilot CLI**'ı denemek içindir. Yapılan her şey GitHub Copilot CLI ile yapılmıştır.**
+ 
  Elimizde bir defter olduğunu düşünelim. Bu deftere isim ve e-posta yazarak kişi kaydedebiliyorsunuz. İstediğiniz kişiyi bulabiliyorsunuz, bilgilerini değiştirebiliyorsunuz ya da silebiliyorsunuz.
 
   Burada tam olarak bunu yaptım — ama bu defteri internet üzerinden çalışır hale getirdim.
