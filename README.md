@@ -74,8 +74,24 @@ class User(db.Model):
 
 Bu, veritabanındaki tablonun şablonudur. Örneğin:
 
-
 | id | name | email | 
 | -------- | -------- | -------- |
 | 1 | Sevval | sevval@test.com |
 | 2 | Zeynep | zeynep@test.com |
+
+```bash primary_key=True ```→ Her kullanıcıya otomatik sıra numarası ver (1, 2, 3...)
+```bash nullable=False ```→ Bu alan boş bırakılamaz, zorunlu
+```bash unique=True ```→ Aynı email iki kez kayıt edilemez
+
+**5. to_dict fonksiyonu**
+
+```bash
+def to_dict(self):
+    return {"id": self.id, "name": self.name, "email": self.email}
+```
+
+Veritabanından gelen kullanıcıyı tarayıcının anlayacağı formata çeviriyor. Yani şunu üretiyor:
+
+```json
+{"id": 1, "name": "Sevval", "email": "sevval@test.com"}
+```
